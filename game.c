@@ -451,7 +451,7 @@ int main (){
   al_init_primitives_addon();
   al_install_audio();
   al_init_acodec_addon();
-  al_reserve_samples(1);
+  al_reserve_samples(2);
 
   ALLEGRO_SAMPLE *DTheme = al_load_sample("./Audio/DancingPlates.ogg");
   ALLEGRO_SAMPLE *Walk = al_load_sample("./Audio/mariowalking.wav");
