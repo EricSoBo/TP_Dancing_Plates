@@ -552,9 +552,11 @@ int main (){
         case ALLEGRO_EVENT_KEY_UP:
           if(event.keyboard.keycode == ALLEGRO_KEY_D){
             player.right = 0;
+            al_stop_sample_instance(WalkInstance);
           }
           if(event.keyboard.keycode == ALLEGRO_KEY_A){
             player.left = 0;
+            al_stop_sample_instance(WalkInstance);
           }
           if(event.keyboard.keycode == ALLEGRO_KEY_SPACE){
             player.balancing = 0;
